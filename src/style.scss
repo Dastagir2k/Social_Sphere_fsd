@@ -1,0 +1,81 @@
+// $theme:(
+//     light:(
+//         textColor:#000,
+//         bg:white,
+//         logo:darkblue,
+//         bgSoft:#f6f3f3,
+//         textColorSoft:#555,
+//         border:lightgray,
+//     ),
+//     dark:(
+//         textColor:whitesmoke,
+//         bg:#222,
+//         logo:white,
+//         bgSoft:#333,
+//         textColorSoft:lightgray,
+//         border:#444,
+//     ),
+// )
+
+.dark-theme{
+    background-color: #333;
+    // background-color: #222;
+    .navbar{
+        background-color:#222;
+        color: white;
+        border: #444;
+        span{
+            color: white;
+        }
+        button{
+            background-color: #222;
+            color: white;
+        }
+        .search{
+            border: #333;
+            color: tra;
+            input{
+                border: none;
+                background-color: transparent;
+                color: whitesmoke;
+            };
+        }
+    }
+    .leftbar{
+        background-color: #222;
+        color: whitesmoke;
+        .container{
+            hr{
+                background-color: #444;
+            }
+        }
+    }
+    .rightbar{
+        background-color: #333;
+        .item{
+            background-color: #222;
+            .spna{
+                color: whitesmoke;
+            }
+            .user{
+                .userinfo{
+                    p{
+                        color: lightgray;
+                    }
+                    span{
+                        color: whitesmoke;
+                    }
+                }
+            }
+        }
+    }
+    .home{
+        background-color: #333;
+    }
+    .post{
+        .container{
+            background-color: #222;
+            color: white;
+        }
+    }
+}

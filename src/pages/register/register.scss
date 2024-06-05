@@ -1,0 +1,82 @@
+.register{
+    margin: 0;
+    border: none;
+    min-height: 100vh;
+    background-color: rgb(193, 190, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .card{
+        width: 50%;
+        background-color: aliceblue;
+        border: 10px;
+        display: flex;
+        min-height: 600px;
+        .left{
+            flex: 1;
+            background: linear-gradient(rgba(39,11,96,0.5),rgba(39,11,96,0.5)),url("https://images.pexels.com/photos/4881619/pexels-photo-4881619.jpeg?auto=compress&cs=tinysrgb&w=1600") center;
+            background-size: cover;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            color: white;
+            h1{
+                font-size: 100px;
+                line-height: 100px;
+            }
+            
+            span{
+                font-size: 14px;
+            }
+            button{
+                width: 50%;
+                padding: 10px;
+                background-color: white;
+                color: rebeccapurple;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+        .right{
+            flex: 1;
+            padding: 50px;
+            gap: 10px;
+            color: #555;
+            display: flex;
+            flex-direction: column;
+
+            form{
+            // max-width: 200px;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                input{
+                    border: none;
+                    border-bottom: 1px solid lightgray;
+                    padding: 20px 10px;
+                }
+                button{
+                    width: 50%;
+                    padding: 10px;
+                    border: none;
+                    background-color: #938eef;
+                    color: white;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .card {
+        flex-direction: column; /* Stack left and right sections in a column */
+    }
+
+    .left, .right {
+        flex-basis: 100%; /* Take full width in mobile view */
+    }
+}
+
+
